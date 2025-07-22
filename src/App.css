@@ -1,0 +1,80 @@
+.heart{
+  background-color: rgba(128, 128, 128, 0.527);
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+.isFav{
+  background-color: white;
+  color:red;
+}
+
+.heart:visited{
+  background-color: red;
+}
+.heart:hover{
+  background-color: red;
+}
+.backGround{
+  background: fixed url('public/assets/op3.jpg');
+}
+
+.cardStyle{
+  background-color: rgba(0, 0, 0, 0.74);
+  color:white;
+  box-shadow: 8px 4px 4px rgba(49, 49, 49, 0.719);
+}
+
+.plus{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
+  font-weight: bolder;
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Fondo borroso */
+.blur-background::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("public/assets/galaxy.jpeg") center center / cover no-repeat;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+/* Contenedor centrado */
+.overlay {
+  z-index: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuStyle{
+  z-index: 100;
+  background-color: rgb(0, 0, 0);
+  color:white;
+}
+
+.imgStyle{  
+  width: 7em;
+}
+
+.text-grey{
+  color: grey;
+}
