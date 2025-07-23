@@ -6,7 +6,7 @@ const FavoritesPage = () => {
     const { favorites } = useContext(FavoritesContext)
     return (
         <>
-        <Container fluid className="py-5 backGround">
+        <Container fluid className="py-5 backGround vh-100">
             <Row>
             {
                 favorites.map((char) => (

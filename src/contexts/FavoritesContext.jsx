@@ -9,6 +9,7 @@ const FavoritesProvider = ({ children }) => {
     const [characters, setCharacters] = useState([])
     const [loading, setLoading] = useState(true)
     const [favorites, setFavorites] = useState([])
+    const [filterData, setFilterData] = useState([])
 
 
     useEffect(() => {
@@ -17,6 +18,7 @@ const FavoritesProvider = ({ children }) => {
             setLoading(false)
             response.data.results.forEach((char) => char.isFavorite = false)
             setCharacters(response.data.results)
+            setFilterData(response.data.results)
             console.log(response.data.results)
         }
         fetchCharacters()
@@ -50,7 +52,7 @@ const FavoritesProvider = ({ children }) => {
 
 
     return (
-        <FavoritesContext.Provider value={{ characters, setCharacters, loading, setLoading, heartItem, favorites, details, toggleButton }}>
+        <FavoritesContext.Provider value={{ characters, setCharacters, loading, setLoading, heartItem, favorites, details, toggleButton, filterData, setFilterData }}>
             {children}
         </FavoritesContext.Provider>
     )

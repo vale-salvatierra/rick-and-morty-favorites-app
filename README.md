@@ -1,12 +1,38 @@
-# React + Vite
+# 🛸 Rick and Morty Favorites
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![API](https://img.shields.io/badge/API-Rick%20%26%20Morty-00bfff?style=for-the-badge)
 
-Currently, two official plugins are available:
+Welcome to **Rick and Morty Favorites**, a fun React-based app that lets you explore characters from the **multiverse** using the official Rick and Morty API. Mark your favorite characters 💚 and dive deeper into their details with smooth routing!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📸 Preview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![App Screenshot](public/Screenshot.png)  
+*Explore, favorite, and learn more about your favorite Rick and Morty characters!*
+
+---
+
+## ⚙️ Tech Stack
+
+- ⚛️ **React**
+- 🚀 **Vite**
+- 🔁 **React Router DOM**
+- 🌐 **Axios**
+- 💅 **Bootstrap** (optional)
+
+---
+
+## ✨ Features
+
+✅ Fetch characters from the [Rick and Morty API](https://rickandmortyapi.com/)  
+💾 Save and view your favorite characters  
+🖼️ Card layout with dynamic data  
+➕ Click the `+` icon to view full character details  
+🌍 Seamless navigation with React Router
+🔍 Search bar for filtering characters by name  
+
+🛡️ License
+MIT © vale-salvatierra

@@ -28,8 +28,8 @@ const CharacterDetails = () => {
                         <Card.Body>
                             <Card.Title>{character.name}</Card.Title>
                             <Card.Text>
-                                Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
+                                {character.name} is a {character.gender} {character.species}.
+                                Last known location is {character.location?.name} and their current status is {character.status}
                             </Card.Text>
                         </Card.Body>
                     </Card>

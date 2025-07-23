@@ -1,5 +1,6 @@
 import { Container, Nav, Navbar, Row, Col, Button, Form} from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import Buscador from "./Buscador";
 
 const Menu = () => {
     return (
@@ -12,20 +13,7 @@ const Menu = () => {
                         <NavLink className={({ isActive }) => isActive ? 'active nav-link text-white' : 'nav-link text-grey'} to="/">All Characters</NavLink>
                         <NavLink className={({ isActive }) => isActive ? 'active nav-link text-white' : 'nav-link text-grey'} to="/favorites">Favorites</NavLink>
                     </Nav>
-                    <Form inline>
-                        <Row>
-                            <Col xs="auto">
-                                <Form.Control
-                                    type="text"
-                                    placeholder="Search"
-                                    className=" mr-sm-2"
-                                />
-                            </Col>
-                            <Col xs="auto">
-                                <Button type="submit" variant="dark">Submit</Button>
-                            </Col>
-                        </Row>
-                    </Form>
+                    <Buscador/>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

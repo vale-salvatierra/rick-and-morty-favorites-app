@@ -5,14 +5,14 @@ import { Container, Row } from "react-bootstrap"
 
 
 const CharacterList = () => {
-    const {characters, heartItem } = useContext(FavoritesContext)
+    const {filterData, heartItem } = useContext(FavoritesContext)
     return (
         
         <>
-        <Container fluid className="py-5 backGround">
+        <Container fluid className="py-5 backGround vh-100">
         <Row>
         {
-            characters.map((char) =>(
+            filterData.map((char) =>(
                 <CharacterCard 
                 key={char.id}
                 image={char.image}
